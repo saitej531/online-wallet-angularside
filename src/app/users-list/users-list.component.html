@@ -1,0 +1,33 @@
+<table>
+
+
+    <tr>
+        <th>UserId</th>
+        <th>UserName</th>
+        <th>Password</th>
+        <th>UserPhone</th>
+        <th>UserEmail</th>
+    </tr>
+    <tr *ngFor="let user of users; let i=index" >
+
+       <td>
+            {{user.userId}}
+        </td>
+
+        <td>
+            {{user.userName}}
+        </td>
+
+        <td>
+            {{user.Password}}
+        </td>
+        <td>
+            {{user.userPhone}}
+        </td>
+        <td>
+            {{user.userEmail}}
+        </td>
+    </tr>
+</table>
+
+<br>

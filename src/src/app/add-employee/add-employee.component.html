@@ -1,0 +1,24 @@
+<h3>add employee</h3>
+
+<form #myform=ngForm (ngSubmit)="addEmployee(myform)">
+
+<div>
+    <label>Employee name</label>
+    
+    <input type="text" name="employeename" ngModel>    
+</div>
+
+
+<div>
+    <label>Age</label>
+    <input type="number" name="Age" ngModel>    
+</div>
+
+
+<input type="submit" value="Submit">    
+</form>
+<br>
+
+<div *ngIf="employee!=undefined">
+Submitted data is {{employee.name}} {{employee.age}}
+</div>
